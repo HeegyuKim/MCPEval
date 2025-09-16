@@ -721,14 +721,14 @@ async def shutdown():
     await close_http_client()
 
 if __name__ == "__main__":
-    import uvloop
+    # import uvloop
     import sys
     
     # Use uvloop for better performance if available
-    try:
-        uvloop.install()
-    except ImportError:
-        pass
+    # try:
+    #     uvloop.install()
+    # except ImportError:
+    #     pass
     
     # Run the server
     mcp_book.run()
